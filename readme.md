@@ -1,0 +1,2 @@
+Simple Overall Analogy:
+Think of this as a digital greeting kiosk: You build a touchscreen kiosk (View) with a title sign (Text) and a big blue touch button (TouchableOpacity). When someone taps the button (onPress), two things happen: 1) A pop-up alert (Alert) says "Hello World!" like a sudden announcement, and 2) A message sign appears on the kiosk itself showing "Hello World!" The useState hook is like a smart notice board that automatically updates what's displayed when you pin new notes to it.

@@ -1,0 +1,18 @@
+React Native Code,Pseudocode,Simple Analogy
+"import React, { useState } from 'react';",Import React and the useState hook,Bringing in the main toolset and a notepad for remembering things
+"import { View, Text, TouchableOpacity, ... } from 'react-native';",Import required React Native UI components,"Gathering building materials like walls, labels, and buttons"
+const HelloWorldApp = () => { ... },Define a functional component,Creating a blueprint for one screen of the app
+"const [message, setMessage] = useState('');",Create a state variable called message,Using a sticky note that updates what everyone sees when changed
+const handleButtonPress = () => { ... },Define button press handler function,Writing instructions for what happens when someone taps the button
+"Alert.alert('Hello', 'Hello World!');",Show alert dialog,Making a pop-up announcement appear on screen
+setMessage('Hello World!');,Update message state,Changing what’s written on the sticky note
+return ( ... ),Return JSX layout,Assembling and displaying the screen
+<View style={styles.container}>,Create main container view,Building the main frame that holds everything
+<Text style={styles.title}>Hello World App</Text>,Display app title text,Putting up a sign with the app name
+<TouchableOpacity style={styles.button} onPress={handleButtonPress}>,Create touchable button,Installing a button that reacts when pressed
+<Text style={styles.buttonText}>Click Me!</Text>,Add text inside button,Labeling the button
+{message ? <Text style={styles.message}>{message}</Text> : null},Conditionally render message,Showing or hiding a sign only when there’s something to say
+const styles = StyleSheet.create({ ... }),Define component styles,Writing a design rulebook
+"container: { flex: 1, justifyContent: 'center' }",Set container layout rules,Making everything centered on the screen
+"button: { backgroundColor: '#007bff', padding: ..., borderRadius: 8 }",Define button appearance,"Making the button blue, padded, and rounded"
+export default HelloWorldApp;,Export component for use elsewhere,Packaging the finished screen for others to use
